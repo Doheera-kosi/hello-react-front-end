@@ -1,12 +1,13 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Greeting from './Greeting';
 
 function App() {
   return (
     <Router>
-      <Switch>
+      <Routes>
         <Route path="/" exact component={Greeting} />
-      </Switch>
+      </Routes>
     </Router>
   );
 }
